@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Food-Is</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f7f8fc;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e84393 0%, #ff6b35 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .toc {
+      background: #fff;
+      border: 1px solid #e8eaf0;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .toc h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin: 6px 0;
+    }
+
+    .toc a {
+      color: #e84393;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: #fff;
+      border: 1px solid #e8eaf0;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #e84393;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #fde8f3;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .icon {
+      font-size: 1.3rem;
+    }
+
+    section h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin: 20px 0 8px;
+    }
+
+    section p {
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    li { margin: 6px 0; }
+
+    .highlight-box {
+      background: #fef9ec;
+      border-left: 4px solid #f5a623;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: #5a4000;
+      font-size: 0.95rem;
+    }
+
+    .info-box {
+      background: #eef6ff;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: #1e3a5f;
+      font-size: 0.95rem;
+    }
+
+    .permission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .permission-card {
+      background: #f7f8fc;
+      border: 1px solid #e8eaf0;
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .permission-card .perm-icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .permission-card h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 4px;
+    }
+
+    .permission-card p {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+
+    th {
+      background: #fde8f3;
+      color: #c0166c;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f0f0f0;
+      color: #444;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafafa; }
+
+    .third-party-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .third-party-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px;
+      background: #f7f8fc;
+      border: 1px solid #e8eaf0;
+      border-radius: 10px;
+    }
+
+    .third-party-item .tp-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .third-party-item h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 2px;
+    }
+
+    .third-party-item p {
+      font-size: 0.85rem;
+      color: #666;
+      margin: 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #fde8f3 0%, #fef5e7 100%);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+
+    .contact-box p { color: #555; }
+
+    .contact-box a {
+      color: #e84393;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.82rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 24px 20px; }
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Food-Is</h1>
+  <p>Privacy Policy</p>
+  <span class="badge">Last updated: July 3, 2026</span>
+</header>
+
+<main>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#device-id">Device Identifier Usage</a></li>
+      <li><a href="#device-permissions">Device Permissions</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#push-notifications">Push Notifications</a></li>
+      <li><a href="#data-retention">Data Retention</a></li>
+      <li><a href="#childrens-privacy">Children's Privacy</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. Overview -->
+  <section id="overview">
+    <h2><span class="icon">🍽️</span> Overview</h2>
+    <p>
+      Welcome to <strong>Food-Is</strong>. This Privacy Policy explains how we handle information
+      when you use our mobile application ("App") available on iOS and Android.
+    </p>
+    <div class="highlight-box">
+      <strong>Our core commitment:</strong> We do <strong>not</strong> collect, store, or sell
+      any personally identifiable information (PII) such as your name, email address, phone number,
+      or payment details. Your privacy is fundamental to how we built this App.
+    </div>
+    <p>
+      By using Food-Is, you agree to the practices described in this policy. If you do not agree,
+      please discontinue use of the App.
+    </p>
+  </section>
+
+  <!-- 2. Information We Collect -->
+  <section id="information-we-collect">
+    <h2><span class="icon">📋</span> Information We Collect</h2>
+
+    <h3>What we do NOT collect</h3>
+    <ul>
+      <li>Name, email address, phone number, or any contact details</li>
+      <li>Passwords or authentication credentials</li>
+      <li>Financial or payment information</li>
+      <li>Social media profiles or linked accounts</li>
+      <li>Precise GPS coordinates stored or transmitted off-device</li>
+    </ul>
+
+    <h3>What we do collect</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>Purpose</th>
+          <th>Stored</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Device Identifier</strong></td>
+          <td>App functionality, analytics, push messaging</td>
+          <td>On-device &amp; analytics services</td>
+        </tr>
+        <tr>
+          <td><strong>App usage events</strong></td>
+          <td>Understanding feature engagement to improve the App</td>
+          <td>Analytics services only</td>
+        </tr>
+        <tr>
+          <td><strong>Crash &amp; diagnostic reports</strong></td>
+          <td>Detecting and fixing bugs</td>
+          <td>Crash reporting services</td>
+        </tr>
+        <tr>
+          <td><strong>Push notification token</strong></td>
+          <td>Delivering in-app and push notifications</td>
+          <td>Messaging service</td>
+        </tr>
+        <tr>
+          <td><strong>Food reviews &amp; photos you submit</strong></td>
+          <td>Core app feature — displaying your reviews</td>
+          <td>App servers</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 3. Device ID -->
+  <section id="device-id">
+    <h2><span class="icon">📱</span> Device Identifier Usage</h2>
+    <p>
+      We use a <strong>device identifier</strong> (a unique, non-personal token assigned to your
+      device) for three specific purposes:
+    </p>
+
+    <h3>1. Application Functionality</h3>
+    <p>
+      The device identifier allows the App to maintain your session, remember your preferences,
+      and provide a consistent experience across App launches — without requiring you to create
+      an account or provide any personal information.
+    </p>
+
+    <h3>2. App Analytics</h3>
+    <p>
+      We use the device identifier to understand aggregate usage patterns — such as which features
+      are most used, how sessions flow, and where errors occur. This data is used solely to improve
+      the App and is never used to identify you personally.
+    </p>
+
+    <h3>3. Push Messaging</h3>
+    <p>
+      The device identifier is associated with your push notification token so that we can deliver
+      relevant notifications (e.g., review updates, feature announcements) to your device. You can
+      opt out of notifications at any time through your device settings.
+    </p>
+
+    <div class="info-box">
+      The device identifier we use is a randomly generated token. It is <strong>not</strong> your
+      Apple IDFA, Android Advertising ID, or any hardware identifier. It cannot be used to identify
+      you as an individual.
+    </div>
+  </section>
+
+  <!-- 4. Device Permissions -->
+  <section id="device-permissions">
+    <h2><span class="icon">🔒</span> Device Permissions</h2>
+    <p>
+      The App requests the following device permissions. All permissions are optional where possible
+      and are used only for the stated purpose. Data accessed via these permissions is processed
+      on-device or used solely within the feature you initiate — it is never transmitted off-device
+      without your action.
+    </p>
+
+    <div class="permission-grid">
+      <div class="permission-card">
+        <div class="perm-icon">📷</div>
+        <h4>Camera</h4>
+        <p>Capture photos of food for your reviews. Photos are used only when you submit a review.</p>
+      </div>
+      <div class="permission-card">
+        <div class="perm-icon">🖼️</div>
+        <h4>Photo Library</h4>
+        <p>Select existing photos from your library to attach to food reviews.</p>
+      </div>
+      <div class="permission-card">
+        <div class="perm-icon">📍</div>
+        <h4>Location (When In Use)</h4>
+        <p>Find restaurants near you to review. Location is used on-demand and is not stored or tracked continuously.</p>
+      </div>
+      <div class="permission-card">
+        <div class="perm-icon">🎙️</div>
+        <h4>Microphone</h4>
+        <p>Capture video with audio for food review content, if you choose to record video.</p>
+      </div>
+      <div class="permission-card">
+        <div class="perm-icon">🔔</div>
+        <h4>Push Notifications</h4>
+        <p>Receive updates, review responses, and relevant announcements. You can disable this in device settings at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Third-Party Services -->
+  <section id="third-party">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>
+      The App integrates with the following third-party services. Each service operates under its own
+      privacy policy. We share only the minimum data necessary for each service to function.
+    </p>
+
+    <div class="third-party-list">
+      <div class="third-party-item">
+        <div class="tp-icon">📊</div>
+        <div>
+          <h4>Microsoft AppCenter Analytics &amp; Crash Reporting</h4>
+          <p>Collects anonymised crash reports and usage events tied to the device identifier to help us improve stability and performance.</p>
+        </div>
+      </div>
+      <div class="third-party-item">
+        <div class="tp-icon">🔥</div>
+        <div>
+          <h4>Google Firebase Analytics</h4>
+          <p>Tracks anonymised in-app events and screen views using the device identifier to help us understand feature engagement.</p>
+        </div>
+      </div>
+      <div class="third-party-item">
+        <div class="tp-icon">🔔</div>
+        <div>
+          <h4>OneSignal Push Notifications</h4>
+          <p>Manages delivery of push notifications using a push token linked to the device identifier. No personal data is shared with OneSignal.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:20px;">
+      We do not sell, rent, or trade any data — including device identifiers — to advertisers,
+      data brokers, or any other third party for commercial purposes.
+    </div>
+  </section>
+
+  <!-- 6. Push Notifications -->
+  <section id="push-notifications">
+    <h2><span class="icon">🔔</span> Push Notifications</h2>
+    <p>
+      With your permission, the App may send push notifications to your device. These notifications
+      may include:
+    </p>
+    <ul>
+      <li>Updates related to food reviews you have submitted</li>
+      <li>New feature announcements</li>
+      <li>Relevant recommendations based on your App activity</li>
+    </ul>
+    <p>
+      You can opt out of push notifications at any time by going to your device's
+      <strong>Settings → Notifications → Food-Is</strong> and disabling notifications.
+      Opting out does not affect your ability to use any other features of the App.
+    </p>
+  </section>
+
+  <!-- 7. Data Retention -->
+  <section id="data-retention">
+    <h2><span class="icon">🗄️</span> Data Retention</h2>
+    <p>
+      We retain data only for as long as necessary to fulfil the purposes described in this policy:
+    </p>
+    <ul>
+      <li>
+        <strong>Analytics data</strong> — retained for up to 14 months in accordance with
+        Google Firebase and AppCenter default retention settings, after which it is automatically deleted.
+      </li>
+      <li>
+        <strong>Crash reports</strong> — retained for up to 90 days and then purged.
+      </li>
+      <li>
+        <strong>Push notification tokens</strong> — retained while the App is installed on your device.
+        Uninstalling the App removes the token from active use.
+      </li>
+      <li>
+        <strong>Food reviews and photos you submit</strong> — retained until you delete them within
+        the App, or until you request deletion by contacting us.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 8. Children's Privacy -->
+  <section id="childrens-privacy">
+    <h2><span class="icon">👶</span> Children's Privacy</h2>
+    <p>
+      The App is not directed to children under the age of <strong>13</strong> (or the applicable
+      age of digital consent in your jurisdiction). We do not knowingly collect any data from
+      children. If you believe a child has used the App and you have concerns, please contact us
+      at the address below and we will take appropriate action.
+    </p>
+  </section>
+
+  <!-- 9. Your Rights -->
+  <section id="your-rights">
+    <h2><span class="icon">⚖️</span> Your Rights</h2>
+    <p>
+      Depending on your location, you may have certain rights regarding your data:
+    </p>
+    <ul>
+      <li><strong>Right to access</strong> — request a summary of data associated with your device.</li>
+      <li><strong>Right to deletion</strong> — request deletion of data associated with your device identifier.</li>
+      <li><strong>Right to opt out of analytics</strong> — you can disable analytics tracking by uninstalling the App.</li>
+      <li><strong>Right to opt out of notifications</strong> — disable push notifications in your device settings at any time.</li>
+    </ul>
+    <p>
+      Because we do not collect personal identifiers, we may not be able to associate a data deletion
+      request with a specific individual. To submit a request, please contact us with your device
+      identifier (found in App settings) so we can locate and remove the relevant records.
+    </p>
+  </section>
+
+  <!-- 10. Changes -->
+  <section id="changes">
+    <h2><span class="icon">📝</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in the App or
+      applicable law. When we do, we will update the "Last updated" date at the top of this page.
+      We encourage you to review this policy periodically. Continued use of the App after changes
+      are posted constitutes your acceptance of the updated policy.
+    </p>
+  </section>
+
+  <!-- 11. Contact -->
+  <section id="contact">
+    <h2><span class="icon">✉️</span> Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy Policy or how your
+      data is handled, please contact us:
+    </p>
+    <div class="contact-box">
+      <p><strong>Food-Is — Privacy Enquiries</strong></p>
+      <p>Email: <a href="mailto:gayanishakaraw@gmail.com">gayanishakaraw@gmail.com</a></p>
+      <p style="margin-top:8px; font-size:0.88rem; color:#888;">
+        We aim to respond to all privacy-related enquiries within 30 days.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Food-Is. All rights reserved.</p>
+  <p style="margin-top:4px;">This privacy policy was last updated on July 3, 2026.</p>
+</footer>
+
+</body>
+</html>
